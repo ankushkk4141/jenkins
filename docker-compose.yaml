@@ -14,8 +14,6 @@ networks:                                         # network
   
 # Docker must be pre-installed
 # Commands to bring jenkins container up: 
-``` 
-docker-compose up -d
-```
+## docker-compose up -d
 ## Above sommand will bring up the container and will print the password for jenkins ui
 ## Go to your browser type your localhost ip:8080, for e.g 127.0.0.1:8080 & you are ready with Jenkins oon your local machine
