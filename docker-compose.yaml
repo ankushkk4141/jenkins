@@ -6,7 +6,7 @@ services:                                         # list of services we want to 
    ports:
      - "8080:8080"                                # local port : container port
    volumes:
-     - "$PWD/jenkins_home:/var/jenkins_home"      # volume where we want to store file
+     - "$PWD/jenkins_home:/var/jenkins_home"      # volume where we want to store file, even if we delete the container data will persist here
    networks:
      - net                                        # under which network we want to run it
 networks:                                         # network
