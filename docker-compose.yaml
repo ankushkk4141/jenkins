@@ -1,0 +1,21 @@
+version: '3'                                      # version of docker compose
+services:                                         # list of services we want to run
+ jenkins:
+   container_name: jenkins                        # container name
+   image: jenkins/jenkins                         # docker image name
+   ports:
+     - "8080:8080"                                # local port : container port
+   volumes:
+     - "$PWD/jenkins_home:/var/jenkins_home"      # volume where we want to store file
+   networks:
+     - net                                        # under which network we want to run it
+networks:                                         # network
+  net:
+  
+# Docker must be pre-installed
+# Commands to bring jenkins container up: 
+``` 
+docker-compose up -d
+```
+## Above sommand will bring up the container and will print the password for jenkins ui
+## Go to your browser type your localhost ip:8080, for e.g 127.0.0.1:8080 & you are ready with Jenkins oon your local machine
